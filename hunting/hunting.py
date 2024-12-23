@@ -499,7 +499,7 @@ class Hunting(commands.Cog):
                 else:
                     msg = f"{author.display_name} gave {animal} a present{bangtime}!"
         else:
-            msg = f"{author.display_name} missed the throw and the {animal} got away!"
+            msg = f"{author.display_name} missed and the {animal} didn't get their present!"
 
         await channel.send(bold(msg))
 
