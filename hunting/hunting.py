@@ -437,7 +437,7 @@ class Hunting(commands.Cog):
             if not m.content:
                 return False
             res = m.content.lower().strip()
-            return "bang" in res
+            return "ho ho ho" in res
 
         def rcheck(r: discord.Reaction, u: discord.Member):
             if u.bot:
@@ -497,9 +497,9 @@ class Hunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} shot a {animal}{bangtime}!"
+                    msg = f"{author.display_name} gave {animal} a present{bangtime}!"
         else:
-            msg = f"{author.display_name} missed the shot and the {animal} got away!"
+            msg = f"{author.display_name} missed the throw and the {animal} got away!"
 
         await channel.send(bold(msg))
 
