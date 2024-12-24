@@ -54,6 +54,7 @@ class Hunting(commands.Cog):
             "meadow lark": ":dodo: **_Ooooh_**",
             "brontosaurus": ":sauropod: **_Roar!_**",
             "wolf": ":wolf: **_It's another wolf bite!_**",
+            "deer in the headlights": ":deer: *deer noise*",
         }
         self.in_game = set()
 
