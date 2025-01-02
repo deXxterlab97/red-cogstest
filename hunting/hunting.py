@@ -438,7 +438,7 @@ class Hunting(commands.Cog):
             if not m.content:
                 return False
             res = m.content.lower().strip()
-            return "ho ho ho" in res
+            return "bang" in res
 
         def rcheck(r: discord.Reaction, u: discord.Member):
             if u.bot:
