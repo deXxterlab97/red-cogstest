@@ -498,9 +498,9 @@ class Hunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} gave {animal} a present{bangtime}!"
+                    msg = f"{author.display_name} shot {animal}{bangtime}!"
         else:
-            msg = f"{author.display_name} missed and the {animal} didn't get their present!"
+            msg = f"{author.display_name} missed the shot and the {animal} got away!"
 
         await channel.send(bold(msg))
 
