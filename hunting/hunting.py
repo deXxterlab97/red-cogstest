@@ -498,7 +498,7 @@ class Hunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} shot {animal}{bangtime}!"
+                    msg = f"{author.display_name} shot the {animal}{bangtime}!"
         else:
             msg = f"{author.display_name} missed the shot and the {animal} got away!"
 
