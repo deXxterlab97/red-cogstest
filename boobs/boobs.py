@@ -23,7 +23,7 @@ class Boobs(commands.Cog):
         msg = ""
         state = random.getstate()
         time = strftime("%-H",gmtime())
-        fulltime = strftime("%I%p",gmtime())
+        fulltime = strftime("%I %p",gmtime())
         for user in users:
             random.seed(str(time))
 
@@ -38,7 +38,7 @@ class Boobs(commands.Cog):
         boobs = sorted(boobs.items(), key=lambda x: x[1])
 
         for user, boob in boobs:
-            msg += "**{}'s size at {}:**\n{}\n".format(user.display_name, fulltime, boob)
+            msg += "**{}'s size at {} (GMT time):**\n{}\n".format(user.display_name, fulltime, boob)
 
         for page in pagify(msg):
             await ctx.send(page)
