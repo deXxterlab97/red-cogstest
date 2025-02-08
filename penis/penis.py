@@ -28,7 +28,7 @@ class Penis(commands.Cog):
         for user in users:
             time = int(time) + int(user.id)
             random.seed(time)
-
+            print(time) 
             if ctx.bot.user.id == user.id:
                 length = 50
             else:
