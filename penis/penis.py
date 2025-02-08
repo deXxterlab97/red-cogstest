@@ -21,14 +21,15 @@ class Penis(commands.Cog):
 
         dongs = {}
         msg = ""
-        state = random.getstate()
+        
         time = strftime("%-H",gmtime())
         fulltime = strftime("%I%p",gmtime())
         
         for user in users:
             time = int(time) + int(user.id)
+            state = random.getstate()
             random.seed(time)
-            print(time) 
+            
             if ctx.bot.user.id == user.id:
                 length = 50
             else:
