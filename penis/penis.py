@@ -44,5 +44,5 @@ class Penis(commands.Cog):
 
         for page in pagify(msg):
             await ctx.send(page)
-        for page in pagify(time):
+        for page in pagify(str(time)):
             await ctx.send(page)
