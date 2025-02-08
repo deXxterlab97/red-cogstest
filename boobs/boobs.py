@@ -25,8 +25,8 @@ class Boobs(commands.Cog):
         time = strftime("%-H",gmtime())
         fulltime = strftime("%I %p",gmtime())
         for user in users:
-            time = int(time) + int(user.id)
-            random.seed(str(time))
+            time2 = int(time) + int(user.id)
+            random.seed(str(time2))
 
             if ctx.bot.user.id == user.id:
                 length = 50
