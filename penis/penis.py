@@ -26,6 +26,7 @@ class Penis(commands.Cog):
         fulltime = strftime("%I%p",gmtime())
         
         for user in users:
+            time = int(time) + int(user.id)
             random.seed(str(time))
 
             if ctx.bot.user.id == user.id:
