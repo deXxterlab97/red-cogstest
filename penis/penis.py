@@ -1,5 +1,7 @@
 import discord
 import random
+import datetime
+from time import gmtime, strftime
 from redbot.core import commands
 from redbot.core.utils.chat_formatting import pagify
 
