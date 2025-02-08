@@ -27,7 +27,7 @@ class Penis(commands.Cog):
         
         for user in users:
             time = int(time) + int(user.id)
-            state = random.getstate()
+            
             random.seed(time)
             
             if ctx.bot.user.id == user.id:
@@ -37,7 +37,7 @@ class Penis(commands.Cog):
 
             dongs[user] = "8{}D".format("=" * length)
 
-        random.setstate(state)
+        
         dongs = sorted(dongs.items(), key=lambda x: x[1])
 
         for user, dong in dongs:
