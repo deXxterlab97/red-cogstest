@@ -16,7 +16,7 @@ class Countdown(commands.Cog):
                 if timer>0:
                     await message.edit(content=f"{timer}s left.")
                 else:
-                    await message.edit(content=f"Time's up, {ctx.author.mention}! {time} has passed.")
+                    await message.edit(content=f"Time's up, {ctx.author.mention}! {time}s has passed.")
         else:
             message = await ctx.send(f"Can't do negatives and more than 6 hours!")
                 
