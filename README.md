@@ -7,3 +7,4 @@ Collection of random ideas from my group of friends, mostly borrowed from other 
 | penis, boobs | Compare size between members, randomized based on time of day instead |
 | hunting | Custom animals for Owl City server |
 | duel | Added some more spicy responses |
+| countdown | Simple cog that counts down the time and pings the user when finishes |
