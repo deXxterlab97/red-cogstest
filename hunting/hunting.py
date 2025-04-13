@@ -55,6 +55,7 @@ class Hunting(commands.Cog):
             "brontosaurus": ":sauropod: **_Roar!_**",
             "wolf": ":wolf: **_It's another wolf bite!_**",
             "deer in the headlights": ":deer: *deer noise*",
+            "bear": ":bear: **_I'm in the den reading your textbooks again!_**",
         }
         self.in_game = set()
 
