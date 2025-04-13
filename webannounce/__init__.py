@@ -61,4 +61,4 @@ class WebAnnounce(commands.Cog):
         if not self.is_message_recent(message):
             await message.channel.send(f"No message in 30 minutes <@234515446659940353>")
 async def setup(bot):
-    await bot.add_cog(WebAnnounce())
+    await bot.add_cog(WebAnnounce(bot))
