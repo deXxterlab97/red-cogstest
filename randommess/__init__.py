@@ -16,7 +16,7 @@ class RandomMess(commands.Cog):
     @commands.command()
     async def randommess(self, ctx):
         message = random.choice(MESSAGE)
-        msg = copy.copy(ctx.message)
+        msg = str(copy.copy(ctx.message))
         ctx.bot.dispatch(msg)
     
 
