@@ -21,7 +21,7 @@ class RandomMess(commands.Cog):
         msg = message1[0]
         await ctx.send(msg)
     @commands.command()
-    async def randomans()
+    async def randomans(self, ctx):
         msg2 = message1[1]
         await ctx.send(msg2)
 
