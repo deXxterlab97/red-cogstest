@@ -15,7 +15,8 @@ MESSAGE = MESSAGE.splitlines()
 class RandomMess(commands.Cog):
     @commands.command()
     async def randommess(self, ctx):
-        global message = str(random.choice(MESSAGE))
+        global message
+        message = str(random.choice(MESSAGE))
         await ctx.send(message)
     
 
