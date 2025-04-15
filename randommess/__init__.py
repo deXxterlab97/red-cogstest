@@ -10,7 +10,7 @@ file = open('/home/dex/output101.txt', 'r+')
 
 MESSAGE = file.read()
 
-MESSAGE = MESSAGE.strip().split()
+MESSAGE = MESSAGE.splitlines()
 
 class RandomMess(commands.Cog):
     @commands.command()
