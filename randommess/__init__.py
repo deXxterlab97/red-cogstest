@@ -6,7 +6,7 @@ from discord.ext import tasks
 from redbot.core.bot import Red
 from redbot.core import commands
 
-file = open('/home/dex/output101.csv', 'r+')
+file = open('/home/dex/DiscordQuotes.csv', 'r+')
 
 MESSAGE = file.read()
 
