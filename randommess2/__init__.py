@@ -12,7 +12,7 @@ MESSAGE = file.read()
 
 MESSAGE = MESSAGE.splitlines()
 
-class RandomMess(commands.Cog):
+class RandomMess2(commands.Cog):
     @commands.command()
     async def randommess(self, ctx):
         global message1
@@ -26,4 +26,4 @@ class RandomMess(commands.Cog):
         await ctx.send(msg2)
 
 async def setup(bot):
-    await bot.add_cog(RandomMess())
+    await bot.add_cog(RandomMess2())
