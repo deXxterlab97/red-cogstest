@@ -6,7 +6,7 @@ from discord.ext import tasks
 from redbot.core.bot import Red
 from redbot.core import commands
 
-file = open('/home/dex/end-tab.txt', 'r+')
+file = open('/home/dex/end-final2025.csv', 'r+')
 
 MESSAGE = file.read()
 
@@ -17,7 +17,7 @@ class RandomMess2(commands.Cog):
     async def randommess(self, ctx):
         global message1
         message = str(random.choice(MESSAGE))
-        message1 = message.split("\t")
+        message1 = message.split(";;")
         msg = message1[0]
         await ctx.send(msg)
     @commands.command()
