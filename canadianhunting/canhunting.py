@@ -180,7 +180,7 @@ class CanHunting(commands.Cog):
 
     @checks.mod_or_permissions(manage_guild=True)
     @canhunting.command()
-    async def canbangtime(self, ctx):
+    async def bangtime(self, ctx):
         """Toggle displaying the bang response time from users."""
         toggle = await self.config.guild(ctx.guild).bang_time()
         await self.config.guild(ctx.guild).bang_time.set(not toggle)
@@ -429,7 +429,7 @@ class CanHunting(commands.Cog):
             if not m.content:
                 return False
             res = m.content.lower().strip()
-            return "bang" in res
+            return "sorry" in res
 
         def rcheck(r: discord.Reaction, u: discord.Member):
             if u.bot:
