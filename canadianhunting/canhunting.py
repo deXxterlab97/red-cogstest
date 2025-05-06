@@ -41,11 +41,11 @@ class CanHunting(commands.Cog):
         )
 
         self.animals = {
-            "A Canadian just fucked a tranny!",
-            "A Canadian just stepped on their own toe!",
-            "A Canadian just committed mass murder!",
-            "A Canadian just just stepped foot in Donbass warzone.",
-            "A Canadian just died...",
+            "prostitute": "A Canadian just fucked a tranny!",
+            "normal canadian": "A Canadian just stepped on their own toe!",
+            "glory hunter canadian": "A Canadian just committed mass murder!",
+            "war hero canadian": "A Canadian just just stepped foot in Donbass warzone.",
+            "average canadian living in SK": "A Canadian just died...",
         }
         self.in_game = set()
 
