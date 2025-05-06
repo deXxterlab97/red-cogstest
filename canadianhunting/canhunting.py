@@ -41,21 +41,11 @@ class CanHunting(commands.Cog):
         )
 
         self.animals = {
-            "dove": ":dove: **_Coo!_**",
-            "penguin": ":penguin: **_Noot!_**",
-            "chicken": ":chicken: **_Bah-gawk!_**",
-            "duck": ":duck: **_Quack!_**",
-            "bat": ":bat: **||You can't hear me||**",
-            "peacock": ":peacock: **_AAAAH!_**",
-            "Floppy Fish": ":fish: **_flop_**",
-            "frog": ":frog: **_Ribbit!_**",
-            "Early Birdie": ":rooster: **_Good Evening, shuttle bus!_**",
-            "lucky bug": ":lady_beetle: **_Don't remind me!_**",
-            "meadow lark": ":dodo: **_Ooooh_**",
-            "brontosaurus": ":sauropod: **_Roar!_**",
-            "wolf": ":wolf: **_It's another wolf bite!_**",
-            "deer in the headlights": ":deer: *deer noise*",
-            "bear": ":bear: **_I'm in the den reading your textbooks again!_**",
+            "A Canadian just fucked a tranny!",
+            "A Canadian just stepped on their own toe!",
+            "A Canadian just committed mass murder!",
+            "A Canadian just just stepped foot in Donbass warzone.",
+            "A Canadian just died...",
         }
         self.in_game = set()
 
