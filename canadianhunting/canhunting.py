@@ -46,6 +46,9 @@ class CanHunting(commands.Cog):
             "glory hunter canadian": "A Canadian just committed mass murder!",
             "war hero canadian": "A Canadian just just stepped foot in Donbass warzone.",
             "average canadian living in SK": "A Canadian just died...",
+            "racist canadian": "A RMCP just deported an Indian for existing",
+            "misinformed canadian": "the entire parliament just applauded to a Nazi",
+            
         }
         self.in_game = set()
 
@@ -280,7 +283,7 @@ class CanHunting(commands.Cog):
                 kill_list.append(f"{animal[1]} {animal[0].capitalize()}")
             else:
                 kill_list.append(f"{animal[1]} {animal[0].capitalize()}s")
-            message = f"{member.name} shot a total of {total} animals ({humanize_list(kill_list)})"
+            message = f"{member.name} apologized to a total of {total} individuals ({humanize_list(kill_list)})"
         await ctx.send(bold(message))
 
     @checks.mod_or_permissions(manage_guild=True)
@@ -489,7 +492,7 @@ class CanHunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} apoligized to the {animal}{bangtime}!"
+                    msg = f"{author.display_name} apologized to the {animal}{bangtime}!"
         else:
             msg = f"{author.display_name} offended and the {animal} got mad!"
 
