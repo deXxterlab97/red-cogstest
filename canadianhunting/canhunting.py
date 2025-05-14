@@ -41,7 +41,6 @@ class CanHunting(commands.Cog):
         )
 
         self.animals = {
-            "prostitute": "A Canadian just fucked a tranny!",
             "normal canadian": "A Canadian just stepped on their own toe!",
             "glory hunter canadian": "A Canadian just committed mass murder!",
             "war hero canadian": "A Canadian just just stepped foot in Donbass warzone.",
@@ -135,7 +134,7 @@ class CanHunting(commands.Cog):
         # pound_len = len(str(len(sorted_acc)))
         score_len = 10
         header = "{score:{score_len}}{name:2}\n".format(
-            score="# Birds Shot",
+            score="# Canadians Apoplogized",
             score_len=score_len + 5,
             name="Name"
             if str(ctx.author.mobile_status) not in ["online", "idle", "dnd"]
