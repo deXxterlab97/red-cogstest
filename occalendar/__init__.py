@@ -17,7 +17,7 @@ class occalendar(commands.Cog):
         await ctx.send(f)
         
         if arg == 'january':
-            f2 = open('test2.txt;, 'r+')
+            f2 = open('test2.txt', 'r+')
             await ctx.send(f2)
             
         month = datetime.now().month
