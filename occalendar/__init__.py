@@ -10,7 +10,7 @@ from redbot.core import commands
 class occalendar(commands.Cog):
     """Calendar of important Owl City events."""
     @commands.command()
-    async def ocreleases(self, ctx, filepath: events):
+    async def ocreleases(self, ctx, filepath=events):
        
         with open(filepath + ".txt", "r") as fp:
              await ctx.send(f.read())
