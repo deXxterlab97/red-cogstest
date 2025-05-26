@@ -10,13 +10,14 @@ class occalendar(commands.Cog):
     @commands.command()
     async def ocreleases(self, ctx, filepath="events"):
        path = '/home/dex/babu97/cogs/CogManager/cogs/occalendar/'
+       filepath = filepath.lower()
        if filepath == 'current':
             now = datetime.now()
-            month = now.strftime("%B")
-            with open(path + month + ".txt", "r") as fp:
+            month = now.strftime("%B").lower()
+            with open(month + ".txt", "r") as fp:
                 await ctx.send(fp.read())
        else:
-            with open(path + filepath + ".txt", "r") as fp:
+            with open(filepath + ".txt", "r") as fp:
                 await ctx.send(fp.read())
                 
             
