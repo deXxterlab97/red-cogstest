@@ -10,7 +10,7 @@ from redbot.core import commands
 class occalendar(commands.Cog):
     """Calendar of important Owl City events."""
     @commands.command()
-    async def ocreleases(self, ctx, filepath: "releases"):
+    async def ocreleases(self, ctx, filepath: "events"):
         if filepath == 'current':
             now = datetime.now()
             month = now.strftime("%B")
