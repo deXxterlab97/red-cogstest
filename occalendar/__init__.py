@@ -9,14 +9,14 @@ class occalendar(commands.Cog):
     """Calendar of important Owl City events."""
     @commands.command()
     async def ocreleases(self, ctx, filepath="events"):
+       path = '/home/dex/babu97/cogs/CogManager/cogs/occalendar/'
        if filepath == 'current':
             now = datetime.now()
             month = now.strftime("%B")
-            with open(month + ".txt", "r") as fp:
+            with open(path + month + ".txt", "r") as fp:
                 await ctx.send(f.read())
        else:
-            await ctx.send(os.getcwd())
-            with open(filepath + ".txt", "r") as fp:
+            with open(path + filepath + ".txt", "r") as fp:
                 
                 await ctx.send(f.read())
                 
