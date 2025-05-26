@@ -13,7 +13,7 @@ class occalendar(commands.Cog):
     async def ocreleases(self, ctx, arg):
         """Lists important events"""    
         
-        f = open ('/owlcityevents.csv', 'r+')
+        f = open ('owlcityevents.csv', 'r+')
         await ctx.send(f)
         
         if arg == 'january':
