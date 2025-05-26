@@ -15,8 +15,9 @@ class occalendar(commands.Cog):
             with open(month + ".txt", "r") as fp:
                 await ctx.send(f.read())
        else:
+            await ctx.send(os.getcwd())
             with open(filepath + ".txt", "r") as fp:
-                await ctx.send(os.getcwd())
+                
                 await ctx.send(f.read())
                 
             
