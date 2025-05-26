@@ -14,11 +14,10 @@ class occalendar(commands.Cog):
             now = datetime.now()
             month = now.strftime("%B")
             with open(path + month + ".txt", "r") as fp:
-                await ctx.send(f.read())
+                await ctx.send(fp.read())
        else:
             with open(path + filepath + ".txt", "r") as fp:
-                
-                await ctx.send(f.read())
+                await ctx.send(fp.read())
                 
             
             
