@@ -14,10 +14,10 @@ class occalendar(commands.Cog):
        if filepath == 'current':
             now = datetime.now()
             month = now.strftime("%B").lower()
-            with open(path + month + ".txt", "r") as fp:
+            with open(path + month + ".txt", "rb") as fp:
                 await ctx.send(fp.read())
        else:
-            with open(path + filepath + ".txt", "r") as fp:
+            with open(path + filepath + ".txt", "rb") as fp:
                 await ctx.send(fp.read())
                 
             
