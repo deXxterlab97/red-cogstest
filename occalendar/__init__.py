@@ -13,12 +13,14 @@ class occalendar(commands.Cog):
        filepath = filepath.lower()
        if filepath == 'events':
             now = datetime.now()
-            month = now.strftime("%B").lower()
+            month = now.strftime("%B")
             await ctx.send(f'**Releases for current month of {month}:**')
+            month = month.lower()
             with open(path + month + ".txt", "r") as fp:
                 await ctx.send(fp.read())
        else:
-            await ctx.send (f'**Releases for the month of {filepath}:**')
+            month = filepath.capitalize()
+            await ctx.send (f'**Releases for the month of {month}:**')
             with open(path + filepath + ".txt", "r") as fp:
                 await ctx.send(fp.read())
                 
