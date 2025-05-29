@@ -56,6 +56,7 @@ class Hunting(commands.Cog):
             "wolf": ":wolf: **_It's another wolf bite!_**",
             "deer in the headlights": ":deer: *deer noise*",
             "bear": ":bear: **_I'm in the den reading your textbooks again!_**",
+            "stalker": ":nerd: **_I wrote a biography about Adam!_**",
         }
         self.in_game = set()
 
