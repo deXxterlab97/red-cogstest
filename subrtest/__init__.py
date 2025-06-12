@@ -17,9 +17,8 @@ class subrtest(commands.Cog):
         post_to_pick = random.randint(1, 100)
         for i in range(0, post_to_pick):
             submission = next(x for x in sub if not x.stickied)
-            e = discord.Embed(title=f'Requested by {ctx.author}', description=f'{submission.title}')
+            e = discord.Embed(title=f'Requested by {ctx.author}', description=f'{submission.title}', url=f'{reddit.config.reddit_url + submission.permalink}')
             e.set_image(url=submission.url)
-            e.set_footer(text='link', url=f'{reddit.config.reddit_url + submission.permalink}')
         await ctx.send(embed=e)
 
 async def setup(bot):
