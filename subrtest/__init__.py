@@ -9,7 +9,8 @@ reddit = praw.Reddit(client_id='p4UNCgfF0qQW9XhglMJo5Q',
                      client_secret='YRJM-PB3nQwK7vPauxfbVIw8xf92zQ',
                      user_agent='babu97')
 
-class subrtest(commands.Cog):    
+class subrtest(commands.Cog):
+    @commands.command()    
     async def sub1(self, ctx):
         memes_submissions = reddit.subreddit('memes').hot()
         post_to_pick = random.randint(1, 10)
