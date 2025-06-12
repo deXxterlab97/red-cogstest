@@ -13,9 +13,7 @@ class subrtest(commands.Cog):
     @commands.command()    
     async def sub1(self, ctx):
         memes_submissions = reddit.subreddit('boobs')
-        post_to_pick = random.randint(1, 10)
-        for i in range(0, post_to_pick):
-            submission = next(x for x in memes_submissions if not x.stickied)
+        submission = next(x for x in memes_submissions if not x.stickied)
 
         await ctx.send(submission.url)
 
