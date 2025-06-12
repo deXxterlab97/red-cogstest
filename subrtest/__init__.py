@@ -1,6 +1,9 @@
 import praw
 import random
+import discord
 from discord.ext import commands
+from redbot.core.bot import Red
+from redbot.core import commands
 
 reddit = praw.Reddit(client_id='p4UNCgfF0qQW9XhglMJo5Q',
                      client_secret='YRJM-PB3nQwK7vPauxfbVIw8xf92zQ',
