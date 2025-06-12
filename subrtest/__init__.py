@@ -12,7 +12,7 @@ reddit = praw.Reddit(client_id='p4UNCgfF0qQW9XhglMJo5Q',
 class subrtest(commands.Cog):
     @commands.command()    
     async def sub1(self, ctx):
-        memes_submissions = reddit.subreddit('memes').hot()
+        memes_submissions = reddit.subreddit('boobs').hot()
         post_to_pick = random.randint(1, 10)
         for i in range(0, post_to_pick):
             submission = next(x for x in memes_submissions if not x.stickied)
