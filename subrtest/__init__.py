@@ -13,7 +13,7 @@ class subrtest(commands.Cog):
     @commands.command()    
     async def sub1(self, ctx, arg):
         
-        sub = reddit.subreddit('arg').hot()
+        sub = reddit.subreddit(arg).hot()
         post_to_pick = random.randint(1, 100)
         for i in range(0, post_to_pick):
             submission = next(x for x in sub if not x.stickied)
