@@ -11,7 +11,7 @@ reddit = praw.Reddit(client_id='p4UNCgfF0qQW9XhglMJo5Q',
 
 class subrtest(commands.Cog):
     @commands.command()    
-    async def sub1(self, ctx, arg):
+    async def sub(self, ctx, arg):
         
         sub = reddit.subreddit(arg).hot()
         post_to_pick = random.randint(1, 100)
