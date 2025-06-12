@@ -12,9 +12,7 @@ reddit = praw.Reddit(client_id='p4UNCgfF0qQW9XhglMJo5Q',
 class subrtest(commands.Cog):
     @commands.command()    
     async def sub1(self, ctx):
-        submissions = reddit.subreddit('boobs')
-        submission = next(x for x in memes_submissions if not x.stickied)
-
+        submission = reddit.subreddit("boobs").random()
         await ctx.send(submissions.url)
 
 async def setup(bot):
