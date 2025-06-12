@@ -13,7 +13,7 @@ class subrtest(commands.Cog):
     @commands.command()    
     async def sub1(self, ctx):
         submission = reddit.subreddit("boobs").random()
-        await ctx.send(submissions.url)
+        await ctx.send(submission.url)
 
 async def setup(bot):
     await bot.add_cog(subrtest())
