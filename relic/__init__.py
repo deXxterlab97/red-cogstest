@@ -4,7 +4,7 @@ from discord.ext import tasks
 from redbot.core.bot import Red
 from redbot.core import commands
 
-class relic(commands.cog)
+class relic(commands.cog):
     @commands.command()
     async def relictime(self, ctx, r1, r2, r2):
                
