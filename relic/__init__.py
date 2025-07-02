@@ -28,7 +28,22 @@ class relic(commands.Cog):
         time_r2_no_ref = math.ceil(float(r2)/float(r2_no_ref))
         time_r3_no_ref = math.ceil(float(r3)/float(r3_no_ref))
         
-        await ctx.send(f"White relic no refresh: {time_r1_no_ref} day(s)\nGreen relic no refresh: {time_r2_no_ref} day(s)\nBlue relic no refresh: {time_r3_no_ref}")
+        time_r1_1_ref = math.ceil(float(r1)/float(r1_1_ref))
+        time_r2_1_ref = math.ceil(float(r2)/float(r2_1_ref))
+        time_r3_1_ref = math.ceil(float(r3)/float(r3_1_ref))
+        
+        time_r1_2_ref = math.ceil(float(r1)/float(r1_2_ref))
+        time_r2_2_ref = math.ceil(float(r2)/float(r2_2_ref))
+        time_r3_2_ref = math.ceil(float(r3)/float(r3_2_ref))
+        
+        time_r1_3_ref = math.ceil(float(r1)/float(r1_3_ref))
+        time_r2_3_ref = math.ceil(float(r2)/float(r2_3_ref))
+        time_r3_3_ref = math.ceil(float(r3)/float(r3_3_ref))
+        
+        await ctx.send(f"White relic no refresh: {time_r1_no_ref} day(s)\nGreen relic no refresh: {time_r2_no_ref} day(s)\nBlue relic no refresh: {time_r3_no_ref} day(s)")
+        await ctx.send(f"White relic with 1 refresh: {time_r1_1_ref} day(s)\nGreen relic with 1 refresh: {time_r2_1_ref} day(s)\nBlue relic with 1 refresh: {time_r3_1_ref} day(s)")
+        await ctx.send(f"White relic with 2 refreshes: {time_r1_2_ref} day(s)\nGreen relic with 2 refreshes: {time_r2_2_ref} day(s)\nBlue relic with 2 refreshes: {time_r3_2_ref} day(s)")
+        await ctx.send(f"White relic with 3 refreshes: {time_r1_3_ref} day(s)\nGreen relic with 3 refreshes: {time_r2_3_ref} day(s)\nBlue relic with 3 refreshes: {time_r3_3_ref} day(s)")
 
 
 async def setup(bot):
