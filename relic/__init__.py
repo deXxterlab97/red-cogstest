@@ -6,7 +6,7 @@ from redbot.core import commands
 
 class relic(commands.cog):
     @commands.command()
-    async def relictime(self, ctx, r1, r2, r2):
+    async def relictime(self, ctx, r1, r2, r3):
                
         r1_no_ref = (120+45)/16*1.37
         r2_no_ref = (120+45)/16*0.93
