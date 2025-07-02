@@ -24,9 +24,8 @@ class relic(commands.Cog):
         r2_3_ref = (480+45)/16*0.93
         r3_3_ref = (480+45)/16*0.66
         
-        time_r1_no_ref = math.ceil(r1/r1_no_ref)
-        time_r2_no_ref = math.ceil(r2/r2_no_ref)
-        time_r3_no_ref = math.ceil(r3/r3_no_ref)
+        time_r1_no_ref = math.ceil(float(r1)/float(r1_no_ref))
+        
         
         await ctx.send(f"White relic no refresh: {time_r1_no_ref} day(s)")
 
