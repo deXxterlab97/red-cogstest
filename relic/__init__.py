@@ -25,9 +25,10 @@ class relic(commands.Cog):
         r3_3_ref = (480+45)/16*0.66
         
         time_r1_no_ref = math.ceil(float(r1)/float(r1_no_ref))
+        time_r2_no_ref = math.ceil(float(r2)/float(r2_no_ref))
+        time_r3_no_ref = math.ceil(float(r3)/float(r3_no_ref))
         
-        
-        await ctx.send(f"White relic no refresh: {time_r1_no_ref} day(s)")
+        await ctx.send(f"White relic no refresh: {time_r1_no_ref} day(s)\nGreen relic no refresh: {time_r2_no_ref} day(s)\nBlue relic no refresh: {time_r3_no_ref}")
 
 
 async def setup(bot):
