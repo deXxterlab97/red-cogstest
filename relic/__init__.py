@@ -55,7 +55,7 @@ class relic(commands.Cog):
         await ctx.send(f"White relic with 2 refreshes: {time_r1_2_ref} day(s)\nGreen relic with 2 refreshes: {time_r2_2_ref} day(s)\nBlue relic with 2 refreshes: {time_r3_2_ref} day(s)\nTotal: {total_2_ref} day(s)")
         await ctx.send(f"White relic with 3 refreshes: {time_r1_3_ref} day(s)\nGreen relic with 3 refreshes: {time_r2_3_ref} day(s)\nBlue relic with 3 refreshes: {time_r3_3_ref} day(s)\nTotal: {total_3_ref} day(s)")
     @commands.command()
-    async def relics(self, ctx, r3, r4, r5, r6, r7, r8, r9)
+    async def relics(self, ctx, r3, r4, r5, r6, r7, r8, r9):
         white_sd = r3*35+r4*55+r5*75+r6*95+r7*115+r8*135+r9*165
         green_sd = r3*15+r4*40+r5*65+r6*90+r7*115+r8*140+r9*170
         blue_sd = r5*15+r6*40+r7*75+r8*120+r9*175
