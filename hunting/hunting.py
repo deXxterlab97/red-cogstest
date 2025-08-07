@@ -56,6 +56,10 @@ class Hunting(commands.Cog):
             "wolf": ":wolf: **_It's another wolf bite!_**",
             "deer in the headlights": ":deer: *deer noise*",
             "bear": ":bear: **_I'm in the den reading your textbooks again!_**",
+            "crow in the beanfield": ":black_bird: **_Caw!_**",
+            "shark in the sink": ":shark: **_Something's swimming with the silverware!_**"
+            "paper tiger": ":tiger2: **_A paper tail fluttered down!_**"
+            "a ghost on the stairs": ":ghost: **_Boo!_**",
         }
         self.in_game = set()
 
