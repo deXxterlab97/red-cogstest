@@ -59,7 +59,6 @@ class Hunting(commands.Cog):
             "crow in the beanfield": ":black_bird: **_Caw!_**",
             "shark in the sink": ":shark: **_Something's swimming with the silverware!_**",
             "paper tiger": ":tiger2: **_A paper tail fluttered down!_**",
-            "a ghost on the stairs": ":ghost: **_Boo!_**",
         }
         self.in_game = set()
 
