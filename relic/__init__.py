@@ -28,13 +28,13 @@ class relic(commands.Cog):
         time_r2_no_ref = math.ceil(float(r2)/float(r2_no_ref))
         time_r3_no_ref = math.ceil(float(r3)/float(r3_no_ref))
         
-        total_no_ref = time_r1_no_ref + time_r2_no_ref + time_r2_no_ref
+        total_no_ref = time_r1_no_ref + time_r2_no_ref + time_r3_no_ref
         
         time_r1_1_ref = math.ceil(float(r1)/float(r1_1_ref))
         time_r2_1_ref = math.ceil(float(r2)/float(r2_1_ref))
         time_r3_1_ref = math.ceil(float(r3)/float(r3_1_ref))
         
-        total_1_ref = time_r1_1_ref + time_r2_1_ref + time_r2_1_ref
+        total_1_ref = time_r1_1_ref + time_r2_1_ref + time_r3_1_ref
         
         time_r1_2_ref = math.ceil(float(r1)/float(r1_2_ref))
         time_r2_2_ref = math.ceil(float(r2)/float(r2_2_ref))
