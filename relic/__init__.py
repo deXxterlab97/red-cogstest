@@ -62,7 +62,7 @@ class relic(commands.Cog):
         
         await ctx.send(f"White relic needed: {white_sd}\nGreen relic needed: {green_sd}\nBlue relic needed: {blue_sd}")
     @commands.command()
-    async def shard (self, ctx, int(starcount), int(shardcount), int(cantina_cost), int(hard)):
+    async def shard (self, ctx, starcount: int, shardcount: int, cantina_cost: int, hard: int):
         
         if hard == 1:
             await ctx.send("Hard is 1")
