@@ -64,6 +64,7 @@ class relic(commands.Cog):
     @commands.command()
     async def shard (self, ctx, starcount, shardcount, cantina_cost, hard):
         global day
+        day = 0
         if hard == 1:
             await ctx.send("Hard is 1")
             if starcount == 3:
@@ -82,7 +83,7 @@ class relic(commands.Cog):
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost))
             await ctx.send(f"Cantina daily: {cantina_daily}")
             if starcount == 3:
-                await ctx.send("it's 3")
+                
                 day = (65+85+100+30-shardcount)/cantina_daily
                 
             elif starcount == 4:
