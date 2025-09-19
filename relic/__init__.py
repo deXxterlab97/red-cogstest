@@ -92,7 +92,15 @@ class relic(commands.Cog):
             else:
                 await ctx.send("Something is wrong")
             await ctx.send(f"Time to take a cantina node character to 7 stars: {math.ceil(day)}") 
-            
-                    
+    @commands.command()
+    async def cost (self, ctx, energy_type, node_cost: int):        
+        if energy_type == "fleet":
+            total_energy = 120+45+360
+            number_sims = math.floor(total_energy / (node_cost * 5))
+        elif energy_type == "regular":
+            total_energy = 120+135+360
+            number_sims = math.floor(total_energy / (node_cost * 5))
+        await ctx.send(f"Total attempts avail:{number_sims}")
+        await ctx.send("2 = 25, 3 = 75; total of 175 and 225 respectively")    
 async def setup(bot):
     await bot.add_cog(relic())        
