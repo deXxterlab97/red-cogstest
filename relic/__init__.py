@@ -65,6 +65,7 @@ class relic(commands.Cog):
     async def shard (self, ctx, starcount, shardcount, cantina_cost, hard):
         day = 0
         if hard == 1:
+            await ctx.send("Hard is 1")
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/5
             elif starcount == 4:
@@ -77,6 +78,7 @@ class relic(commands.Cog):
                 await ctx.send("Something is wrong")
             await ctx.send(f"Time to take a hard node character to 7 stars: {math.ceil(day)}")
         else:
+            await ctx.send("Hard isn't 1")
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost))
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/cantina_daily
