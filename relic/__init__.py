@@ -65,7 +65,6 @@ class relic(commands.Cog):
     async def shard (self, ctx, starcount: int, shardcount: int, cantina_cost: int, hard: int):
         
         if hard == 1:
-            await ctx.send("Hard is 1")
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/5
             elif starcount == 4:
