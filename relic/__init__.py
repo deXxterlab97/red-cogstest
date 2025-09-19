@@ -76,7 +76,7 @@ class relic(commands.Cog):
                 await ctx.send("Something is wrong")
             await ctx.send(f"Time to take a hard node character to 7 stars: {math.ceil(day)}")
         else:
-            cantina_daily = math.ceil((120 + 360 + 45) / cantina_cost)
+            cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost))
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/cantina_daily
             elif starcount == 4:
