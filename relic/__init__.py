@@ -80,6 +80,7 @@ class relic(commands.Cog):
         else:
             await ctx.send("Hard isn't 1")
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost))
+            await ctx.send(f"Cantina daily: {cantina_daily}")
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/cantina_daily
             elif starcount == 4:
