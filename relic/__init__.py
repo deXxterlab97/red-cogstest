@@ -78,13 +78,12 @@ class relic(commands.Cog):
                 await ctx.send("Something is wrong")
             await ctx.send(f"Time to take a hard node character to 7 stars: {math.ceil(day)}")
         else:
-            await ctx.send("Hard isn't 1")
+            
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost) / 3)
+            
             await ctx.send(f"Cantina daily: {cantina_daily}")
             if starcount == 3:
-                
                 day = (65+85+100+30-shardcount)/cantina_daily
-                
             elif starcount == 4:
                 day = (65+85+100-shardcount)/cantina_daily
             elif starcount == 5:
@@ -93,8 +92,8 @@ class relic(commands.Cog):
                 day = (100-shardcount)/cantina_daily
             else:
                 await ctx.send("Something is wrong")
-             
-        await ctx.send(f"Time to take a cantina node character to 7 stars: {math.ceil(day)}")    
+            await ctx.send(f"Time to take a cantina node character to 7 stars: {math.ceil(day)}") 
+            
                     
 async def setup(bot):
     await bot.add_cog(relic())        
