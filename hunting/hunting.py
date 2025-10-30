@@ -41,24 +41,8 @@ class Hunting(commands.Cog):
         )
 
         self.animals = {
-            "dove": ":dove: **_Coo!_**",
-            "penguin": ":penguin: **_Noot!_**",
-            "chicken": ":chicken: **_Bah-gawk!_**",
-            "duck": ":duck: **_Quack!_**",
-            "bat": ":bat: **||You can't hear me||**",
-            "peacock": ":peacock: **_AAAAH!_**",
-            "Floppy Fish": ":fish: **_flop_**",
-            "frog": ":frog: **_Ribbit!_**",
-            "Early Birdie": ":rooster: **_Good Evening, shuttle bus!_**",
-            "lucky bug": ":lady_beetle: **_Don't remind me!_**",
-            "meadow lark": ":dodo: **_Ooooh_**",
-            "brontosaurus": ":sauropod: **_Roar!_**",
-            "wolf": ":wolf: **_It's another wolf bite!_**",
-            "deer in the headlights": ":deer: *deer noise*",
-            "bear": ":bear: **_I'm in the den reading your textbooks again!_**",
-            "crow in the beanfield": ":black_bird: **_Caw!_**",
-            "shark in the sink": ":shark: **_Something's swimming with the silverware!_**",
-            "paper tiger": ":tiger2: **_A paper tail fluttered down!_**",
+            "Ghost": ":ghost: **_Boo!_**",
+          
         }
         self.in_game = set()
 
