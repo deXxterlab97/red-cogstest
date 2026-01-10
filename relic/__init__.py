@@ -63,9 +63,9 @@ class relic(commands.Cog):
         await ctx.send(f"White relic needed: {white_sd}\nGreen relic needed: {green_sd}\nBlue relic needed: {blue_sd}")
     @commands.command()
     async def accantina (self, ctx, starcount: int, shardcount: int, cantina_cost: int):          
-            cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost) / 3 * 2)
+            cantina_daily = math.floor((120 + 360 + 45) / float(cantina_cost) / 3 * 2)
             
-            await ctx.send(f"Cantina daily: {cantina_daily}")
+            await ctx.send(f"Cantina daily: {cantina_daily} shards")
             if starcount == 3:
                 day = (65+85+100+30-shardcount)/cantina_daily
             elif starcount == 4:
@@ -76,7 +76,7 @@ class relic(commands.Cog):
                 day = (100-shardcount)/cantina_daily
             else:
                 await ctx.send("Something is wrong")
-            await ctx.send(f"Time to take a cantina node character to 7 stars: {math.ceil(day)}") 
+            await ctx.send(f"Time to take a cantina node character to 7 stars: {math.ceil(day)} days") 
     @commands.command()
     async def cost (self, ctx, energy_type, node_cost: int):        
         if energy_type == "fleet":
