@@ -62,7 +62,7 @@ class relic(commands.Cog):
         
         await ctx.send(f"White relic needed: {white_sd}\nGreen relic needed: {green_sd}\nBlue relic needed: {blue_sd}")
     @commands.command()
-    async def cantina (self, ctx, starcount: int, shardcount: int):          
+    async def cantina (self, ctx, starcount: int, shardcount: int, cantina_cost: int):          
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost) / 3)
             
             await ctx.send(f"Cantina daily: {cantina_daily}")
