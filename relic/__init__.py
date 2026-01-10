@@ -62,22 +62,7 @@ class relic(commands.Cog):
         
         await ctx.send(f"White relic needed: {white_sd}\nGreen relic needed: {green_sd}\nBlue relic needed: {blue_sd}")
     @commands.command()
-    async def shard (self, ctx, starcount: int, shardcount: int, cantina_cost: int, hard: int):
-        
-        if hard == 1:
-            if starcount == 3:
-                day = (65+85+100+30-shardcount)/5
-            elif starcount == 4:
-                day = (65+85+100-shardcount)/5
-            elif starcount == 5:
-                day = (85+100-shardcount)/5
-            elif starcount == 6:
-                day = (100-shardcount)/5
-            else:
-                await ctx.send("Something is wrong")
-            await ctx.send(f"Time to take a hard node character to 7 stars: {math.ceil(day)}")
-        else:
-            
+    async def cantina (self, ctx, starcount: int, shardcount: int):          
             cantina_daily = math.ceil((120 + 360 + 45) / float(cantina_cost) / 3)
             
             await ctx.send(f"Cantina daily: {cantina_daily}")
