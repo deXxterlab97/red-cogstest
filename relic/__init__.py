@@ -7,7 +7,7 @@ from redbot.core import commands
 class relic(commands.Cog):
     @commands.command()
     async def relictime(self, ctx, r1, r2, r3):
-               
+    """Time to acquire enough signal data"""           
         r1_no_ref = (120+45)/16*1.37
         r2_no_ref = (120+45)/16*0.93
         r3_no_ref = (120+45)/16*0.66
