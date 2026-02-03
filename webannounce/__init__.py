@@ -16,7 +16,7 @@ class WebAnnounce(commands.Cog):
         self.bot: Red = bot
 
     @staticmethod
-    def is_message_recent(message: discord.Message, minutes: int = 300) -> bool:
+    def is_message_recent(message: discord.Message, minutes: int = 480) -> bool:
         now: datetime.datetime = datetime.datetime.now(datetime.timezone.utc)
         time_difference: datetime.timedelta = now - message.created_at
         minutes_difference: float = time_difference.total_seconds() / 60
@@ -59,6 +59,6 @@ class WebAnnounce(commands.Cog):
         if message.webhook_id != self.WEBHOOK_ID:
             return
         if not self.is_message_recent(message):
-            await message.channel.send(f"There hasn't been any messages in 5 hours <@234515446659940353>")
+            await message.channel.send(f"There hasn't been any messages in 8 hours <@234515446659940353>")
 async def setup(bot):
     await bot.add_cog(WebAnnounce(bot))
