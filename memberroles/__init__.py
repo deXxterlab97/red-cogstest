@@ -5,16 +5,9 @@ from redbot.core import commands
 
 class memberroles(commands.Cog):
     @commands.command()
-    async def memberroles(self, ctx, roleid):
-        role = ctx.guild.get_role(roleid)
-        await ctx.send(role)
-        return
-        members = [
-            member.display_name
-            for member in ctx.guild.members
-            if role not in member.roles
-        ]
-        for member in members:
-            await ctx.send(member)
+    async def memberroles(self, ctx, role: discord.Role):
+    for member in ctx.guild.members:
+        if not member.bot and role not in member.roles:
+            await ctx.send(member.display_name)
 async def setup(bot):
     await bot.add_cog(memberroles())
