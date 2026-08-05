@@ -15,7 +15,4 @@ class memberroles(commands.Cog):
         ]
         await ctx.send("\n".join(members))
 async def setup(bot):
-    await bot.add_cog(memberroles())  
-    
-
-
+    await bot.add_cog(memberroles())
