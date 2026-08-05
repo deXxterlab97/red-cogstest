@@ -2,7 +2,6 @@ import discord
 from discord.ext import tasks
 from redbot.core.bot import Red
 from redbot.core import commands
-from discord.ext import commands
 
 class memberroles(commands.Cog):
     @commands.command()
