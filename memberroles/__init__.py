@@ -12,6 +12,6 @@ class memberroles(commands.Cog):
             for member in ctx.guild.members
             if role not in member.roles
         ]
-        await ctx.send("\n".join(members))
+        await ctx.send(members)
 async def setup(bot):
     await bot.add_cog(memberroles())
