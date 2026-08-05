@@ -7,6 +7,8 @@ class memberroles(commands.Cog):
     @commands.command()
     async def memberroles(self, ctx, roleid):
         role = ctx.guild.get_role(roleid)
+        await ctx.send(role)
+        return
         members = [
             member.display_name
             for member in ctx.guild.members
