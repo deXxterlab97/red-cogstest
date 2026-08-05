@@ -6,7 +6,7 @@ from redbot.core import commands
 class memberroles(commands.Cog):
     @commands.command()
     async def memberroles(self, ctx):
-        for member in ctx.message.server.members:
+        for member in guild.members:
             if not get(member.roles, name='Verified Owl'):
                 await ctx.send(member)
     
