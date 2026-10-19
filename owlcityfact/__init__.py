@@ -23,8 +23,9 @@ class OwlCityFact(commands.Cog):
     async def post_random_line(self):
         with open(FILE, encoding="utf-8") as f:
             lines = [line.strip() for line in f if line.strip()]
+        ran1 = random.randint(1, 100)        
         channel = self.bot.get_channel(self.CHANNEL_ID)
-        await channel.send(random.choice(lines))
+        await channel.send(f"Random Owl City fact #{ran1}{random.choice(lines)}")
 
     @post_random_line.before_loop
     async def before_post(self):
