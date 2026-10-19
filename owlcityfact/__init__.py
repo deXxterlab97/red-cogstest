@@ -6,7 +6,7 @@ from discord.ext import tasks
 from redbot.core.bot import Red
 from redbot.core import commands
 
-FILE=/owlcityfact.txt
+FILE="owlcityfact.txt"
 
 class owlcityfact(commands.Cog):
     CHANNEL_ID: Final[int] = 1030666245361631242
