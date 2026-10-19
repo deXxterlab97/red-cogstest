@@ -10,7 +10,7 @@ FILE = Path(__file__).parent / "owlcityfact.txt"
 
 
 class OwlCityFact(commands.Cog):
-    CHANNEL_ID: Final[int] = 1030666245361631242
+    CHANNEL_ID: Final[int] = 1030660521172676668
 
     def __init__(self, bot: Red):
         self.bot = bot
@@ -19,7 +19,7 @@ class OwlCityFact(commands.Cog):
     async def cog_unload(self):
         self.post_random_line.cancel()
 
-    @tasks.loop(minutes=3)
+    @tasks.loop(hours=6)
     async def post_random_line(self):
         with open(FILE, encoding="utf-8") as f:
             lines = [line.strip() for line in f if line.strip()]
