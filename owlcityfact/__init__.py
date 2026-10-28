@@ -47,5 +47,5 @@ class OwlCityFact(commands.Cog):
 
     @tasks.loop(hours=6)
 
-async def setup(bot: Red):
+async def setup(bot):
     await bot.add_cog(OwlCityFact(bot))
