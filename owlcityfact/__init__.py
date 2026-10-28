@@ -45,7 +45,6 @@ class OwlCityFact(commands.Cog):
         self._write_queue(lines)
         return lines
 
-    @tasks.loop(hours=6)
-
+    @tasks.loop(hours=10)
 async def setup(bot):
     await bot.add_cog(OwlCityFact(bot))
