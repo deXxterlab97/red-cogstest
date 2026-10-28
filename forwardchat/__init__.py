@@ -6,7 +6,7 @@ from redbot.core.bot import Red
 
 
 class ForwardChat(commands.Cog):
-    CHANNEL_ID: Final[int] = 123456789012345678  
+    CHANNEL_ID: Final[int] = 1564822502297833603  
 
     def __init__(self, bot: Red):
         self.bot = bot
