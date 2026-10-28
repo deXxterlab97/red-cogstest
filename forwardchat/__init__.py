@@ -16,7 +16,7 @@ class ForwardChat(commands.Cog):
         """Send a message to the staff channel."""
         channel = self.bot.get_channel(self.CHANNEL_ID)
         await channel.send(
-            f"**{ctx.author}**: {text}",
+            f"**{ctx.author.mention}**: {text}",
             allowed_mentions=discord.AllowedMentions.none(),
         )
         await ctx.author.send(f"Your message has been sent:\n> {text}")
