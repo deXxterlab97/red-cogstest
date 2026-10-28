@@ -5,7 +5,7 @@ from redbot.core import commands
 from redbot.core.bot import Red
 
 
-class Forward(commands.Cog):
+class ForwardChat(commands.Cog):
     CHANNEL_ID: Final[int] = 123456789012345678  
 
     def __init__(self, bot: Red):
@@ -24,4 +24,4 @@ class Forward(commands.Cog):
 
 
 async def setup(bot: Red):
-    await bot.add_cog(Forward(bot))
+    await bot.add_cog(ForwardChat(bot))
