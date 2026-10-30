@@ -41,7 +41,7 @@ class Hunting(commands.Cog):
         )
 
         self.animals = {
-            "ghost": ":ghost: **_Boo!_**",
+            "ghost": ":ghost: **_I am scaring you!_**",
         }
         self.in_game = set()
 
