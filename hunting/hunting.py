@@ -294,7 +294,7 @@ class Hunting(commands.Cog):
                 kill_list.append(f"{animal[1]} {animal[0].capitalize()}")
             else:
                 kill_list.append(f"{animal[1]} {animal[0].capitalize()}s")
-            message = f"{member.name} shot a total of {total} animals ({humanize_list(kill_list)})"
+            message = f"{member.name} caught a total of {total} animals ({humanize_list(kill_list)})"
         await ctx.send(bold(message))
 
     @checks.mod_or_permissions(manage_guild=True)
@@ -443,7 +443,7 @@ class Hunting(commands.Cog):
             if not m.content:
                 return False
             res = m.content.lower().strip()
-            return "bang" in res
+            return "catch" in res
 
         def rcheck(r: discord.Reaction, u: discord.Member):
             if u.bot:
@@ -503,9 +503,9 @@ class Hunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} shot the {animal}{bangtime}!"
+                    msg = f"{author.display_name} took the {animal} to sanctuary{bangtime}!"
         else:
-            msg = f"{author.display_name} missed the shot and the {animal} got away!"
+            msg = f"The {animal} escaped from {author.display_name}!"
 
         await channel.send(bold(msg))
 
