@@ -286,7 +286,7 @@ class Hunting(commands.Cog):
         kill_list = []
         message = "Something went wrong?"
         if not score:
-            message = "Please shoot something before you can brag about it."
+            message = "Please catch something before you can brag about it."
 
         for animal in score.items():
             total = total + animal[1]
@@ -503,7 +503,7 @@ class Hunting(commands.Cog):
                     cur_name = await bank.get_currency_name(guild)
                     msg = f"{author.display_name} shot a {animal}{bangtime} and earned {reward} {cur_name}!"
                 else:
-                    msg = f"{author.display_name} took the {animal} to sanctuary{bangtime}!"
+                    msg = f"{author.display_name} took the {animal} to the sanctuary{bangtime}!"
         else:
             msg = f"The {animal} escaped from {author.display_name}!"
 
